@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&family=Inter&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Yash Jain</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certification">Certifications</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Yash Jain</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#certification" onclick="toggleMenu()">Certification</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic-container">
+            <img src="img.png" alt="Yash Jain profile picture">
+        </div>
+        <div class="section_text">
+            <p class="section__text_p1">
+                Hello, I am 
+            </p>
+            <h1 class="title">Yash Jain</h1>
+            
+            <p class="section_text_p2">Data Science and Data Analyst Enthusiast.</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('cv.pdf')">Download CV</button>
+                <button class="btn btn-color-2" onclick="location.href='./#contact'" >Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="/assets/linkedin.png" alt="My linkedin profile" class="icon" onclick="location.href='https://www.linkedin.com/in/yash-jain-52785a1b7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BZFAF3yFXTimlciej1wTVkg%3D%3D'">
+                <img src="/assets/github.png" alt="My github profile" class="icon" onclick="location.href='https://github.com/yash2118'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <!-- <div class="section_pic-container">
+                <img src="./assets/about-pic.png" alt="profile pic" class="about-pic">
+            </div> -->
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.E. Bachelor's Degree</p>
+                        <p>Adani Institue of Infrastructure Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Welcome to my portfolio website! I'm thrilled to have you here. I am deeply passionate about the world of data science and data analysis, and this platform serves as a reflection of my journey and exploration in this dynamic field.With a curious mind and a penchant for uncovering insights within complex datasets, I have embarked on a quest to unravel the stories hidden within the numbers. My background and experience have equipped me with a strong foundation in statistical analysis, machine learning, and data visualization, allowing me to extract meaningful patterns and trends that drive informed decision-making.</p>
+                        
+                       <p> As a dedicated data enthusiast, I thrive on challenges that demand both analytical thinking and creative problem-solving. Whether it's wrangling messy data, constructing predictive models, or crafting compelling visual representations, I find immense joy in translating raw information into actionable solutions. The thrill of discovering actionable insights and witnessing the real-world impact of data-driven strategies is what fuels my enthusiasm.
+                        
+                        Thank you for visiting, and I look forward to connecting with fellow enthusiasts, collaborators, and potential employers who share my passion for turning data into actionable insights.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience_details container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Libraries</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Expereince icon" class="icon">
+                            <div>
+                                <h3>Numpy</h3>
+                                <p>Expereinced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Expereince icon" class="icon">
+                            <div>
+                                <h3>Pandas</h3>
+                                <p>Expereinced</p>
+                            </div>
+                        </article><article>
+                            <img src="./assets/checkmark.png" alt="Expereince icon" class="icon">
+                            <div>
+                                <h3>Matlpotlib</h3>
+                                <p>Expereinced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Expereinced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                            <div>
+                                <h3>Python</h3>
+                                <p>Expereinced</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            <div class="details-container">
+                <h2 class="experience-subtitle">Softwares</h2>
+                <div class="article-container">
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>MS Excel</h3>
+                            <p>Expereinced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>MS Powerpoint</h3>
+                            <p>Expereinced</p>
+                        </div>
+                    </article>
+                    <article>
+                        <img src="./assets/checkmark.png" alt="Experience icon" class="icon">
+                        <div>
+                            <h3>Power BI</h3>
+                            <p>Expereinced</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section_text_p1">Browse My Account</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.jpeg" alt="Project-1" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Car Price Prediction System</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/yash2118/car_prices'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://yash2118.github.io/car_prices/'">Live Demo</button>
+                </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/project-2.jpg" alt="Project-2" class="project-img">
+            </div>
+            <h2 class="experience-subtitle project-title">Movie Recommendation System</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/yash2118/Movie_recommendation'">Github</button>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/yash2118'">Live Demo</button>
+            </div>
+    </div>
+</div>
+</div>
+<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certification'">
+    </section>
+    <section id="certification">
+        <p class="section_text_p1">View My</p>
+        <h1 class="title">Certifications</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/simplilearn.jpg" alt="Project-1" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Machine learning</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('machine learning certificate.pdf')">View Certificate</button>
+                </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/standford.png" alt="Project-2" class="project-img">
+            </div>
+            <h2 class="experience-subtitle project-title">Machine learning basics</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('Machine Learning.pdf')">View Certificate</button>
+            </div>
+    </div>
+    <div class="details-container color-container">
+        <div class="article-container">
+            <img src="./assets/ml-blockchain.jpg" alt="Project-3" class="project-img">
+        </div>
+        <h2 class="experience-subtitle project-title">ML-Blockchain Workshop</h2>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('ml-blockchain.pdf')">View Certificate</button>
+        </div>
+</div>
+</div>
+<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#internships'">
+    </section>
+    <section id="internships">
+        <p class="section_text_p1">My</p>
+        <h1 class="title">Internships</h1>
+        <div class="about-containers">
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/oasis.png" alt="Project-3" class="project-img">
+            </div>
+          <h3 class="experience-subtitle project-title">Oasis Infobyte</h3>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('oasis internship.pdf')">View Certificate</button>
+        </div>
+        </div>
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/yhlls.png" alt="Project-3" class="project-img">
+            </div>
+            <h3 class="experience-subtitle project-title">Yhills Education</h3>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('yhills.pdf')">View Certificate</button>
+            </div>
+        </div>    
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/tata-logo.jpg" alt="Project-3" class="project-img">
+            </div>
+            <h3 class="experience-subtitle project-title">Tata Data Analytics</h3>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('tata internship.pdf')">View Certificate</button>
+            </div>
+        </div>     
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/Accenture-Logo.jpg" alt="Project-3" class="project-img">
+            </div>
+            <h3 class="experience-subtitle project-title">Accenture Data Visualisation</h3>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('Accenture internship.pdf')">View Certificate</button>
+            </div>
+        </div>     
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/pwc_logo.jpg" alt="Project-3" class="project-img">
+            </div>
+            <h3 class="experience-subtitle project-title">PWC Power BI</h3>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('pwc certificate.pdf')">View Certificate</button>
+            </div>
+        </div>        
+        <!-- <div class="details-container color-container">
+            <div class="article-container">
+                <img src="./assets/ml-blockchain.jpg" alt="Project-3" class="project-img">
+            </div>
+            <h3 class="experience-subtitle project-title">Yhills Education</h3>
+            <p>Data Science Intern</p>
+            <p>04/2023 - 05/2023</p>
+            <p>Task regarding machine learning has to be completed.</p>
+          
+        </div> -->
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+   </section>     
+    <section id="contact">
+        <p class="section_text_p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="email icon" class="icon contact-icon">
+                <p><a href="mailto:example@gmail.com">yashjain.aiie@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/yash-jain-52785a1b7?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bq%2FfFkBjVS6eiH31j6b8Dcg%3D%3D">Linkedin</a></p>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certification">Certifications</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2023 Yash Jain.All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Data Science.', '&amp; Data Analyst Enthusiast.'],
+          typeSpeed: 50,
+        });
+      </script> -->
+</body>
+</html>
